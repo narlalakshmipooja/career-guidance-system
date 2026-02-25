@@ -24,8 +24,30 @@ function LoginPage() {
         </div>
 
         <button className="btn" onClick={handleLogin}>
-          Login
-        </button>
+  Login
+</button>
+
+<br /><br />
+
+<h4>Select Role</h4>
+
+<button onClick={() => navigate("/student-login")}>
+  Student
+</button>
+
+<button 
+  onClick={() => navigate("/counselor-login")} 
+  style={{ marginLeft: "10px" }}
+>
+  Counselor
+</button>
+
+<button 
+  onClick={() => navigate("/admin-login")} 
+  style={{ marginLeft: "10px" }}
+>
+  Admin
+</button>
       </div>
     </div>
   );
